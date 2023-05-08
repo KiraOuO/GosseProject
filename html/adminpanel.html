@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Attendance Dashboard | By Code Info</title>
+  <link rel="stylesheet" href="./../css/admin.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <section class="main">
+        <div class="upper-table">
+            <input class="upper-btn-1" placeholder="Login">
+            <select class="upper-btn-2">
+                <option value="role">Chose Role</option>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+                <option value="owner">Owner</option>
+            </select>
+            <div class="sub-btn">
+                <button class="sub-btn-1">Filter</button>
+            </div>
+        </div>
+      <section class="attendance">
+        <div class="attendance-list">
+          <h1>Admin Panel</h1>
+          <button class="data">Update Data</button>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="not-active">
+                <td>01</td>
+                <td>Sam David</td>
+                <td>User</td>
+                <td><button>View</button></td>
+              </tr>
+              <tr class="active">
+                <td>02</td>
+                <td>Balbina Kherr</td>
+                <td>Owner</td>
+                <td><button>View</button></td>
+              </tr>
+              <tr class="not-active">
+                <td>03</td>
+                <td>Badan John</td>
+                <td>Admin</td>
+                <td><button>View</button></td>
+              </tr>
+              <tr class="not-active">
+                <td>04</td>
+                <td>Sara David</td>
+                <td>User</td>
+                <td><button>View</button></td>
+              </tr>
+              <!-- <tr >
+                <td>05</td>
+                <td>Salina</td>
+                <td>Coding</td>
+                <td>03-24-22</td>
+                <td>9:00AM</td>
+                <td>4:00PM</td>
+                <td><button>View</button></td>
+              </tr>
+              <tr >
+                <td>06</td>
+                <td>Tara Smith</td>
+                <td>Testing</td>
+                <td>03-24-22</td>
+                <td>9:00AM</td>
+                <td>4:00PM</td>
+                <td><button>View</button></td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+        <div class="under-table">
+            <button class="under-btn-1">Back</button>
+            <button class="under-btn-2">Next</button>
+          </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>

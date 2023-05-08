@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Стили-->
+    <link rel="stylesheet" href="./../css/login.css">
+    <!--Фавикон-->
+    <link rel="icon" href="./../img/little-nightmares.png" type="image/x-icon"/>
+    <!--Иконки-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--Логин-->
+    <script src="./../js/login.js" defer></script>
+    <!--НавБар-->
+    <script src="./../js/navbar.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i><section class="home-section">
+                <div class="home-content">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </section></i>
+            <span class="logo_name">Nightmares</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-map-alt'></i>
+                    <span class="link_name">Map</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Map</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bxs-ghost'></i>
+                        <span class="link_name">Admin</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow' ></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Admin</a></li>
+                    <li><a href="#">Admin Panel</a></li>
+                    <li><a href="#">Confirming Location</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-user'></i>
+                        <span class="link_name">Profile</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow' ></i>
+                </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Profile</a></li>
+                        <li><a href="#">Setting</a></li>
+                    </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-history'></i>
+                    <span class="link_name">History Location</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">History Location</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="link_name">Comments</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Comments</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" id="search-link">
+                    <i class='bx bx-search'></i>
+                    <span class="link_name">Search</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Search</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="./../img/admin-logo.png" alt="profileImg">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Your Name</div>
+                        <div class="job">Admin</div>
+                    </div>
+                        <i class='bx bx-log-out' ></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--Контейнер-->
+    <article class="container">
+        <!--Внуwтриний Блок-->
+        <div class="block">
+            <section class="block__item block-item">
+                <h2 class="block-item__title">Already have an account?</h2>
+                <buttom class="block-item__btn signin-btn">Login</buttom>
+            </section>
+            <section class="block__item block-item">
+                <h2 class="block-item__title">Don't have an account?</h2>
+                <buttom class="block-item__btn signup-btn">Sign up</buttom>
+            </section>
+        </div>
+        <!--Блок Формы-->
+        <div class="form-box">
+            <!--Форма Входа-->
+            <form action="#" class="form form_signin">
+                <h3 class="form__title">
+                    Login
+                </h3>
+                <p>
+                    <input type="text" class="form__input" placeholder="nickname">
+                </p>
+                <p>
+                    <input type="password" class="form__input" placeholder="password">
+                    <a href="#""></a>
+                </p>
+                <p>
+                    <button class="form__btn">Login</button>
+                </p>
+                <p>
+                    <a href="#" class="form__forgot">Don't remember the password?</a>
+                </p>
+            </form>
+            <!--Форма Регестрации-->
+            <form action="#" class="form form_signup">
+                <h3 class="form__title">
+                    Sign up
+                </h3>
+                <p>
+                    <input type="text" class="form__input" placeholder="nickname">
+                </p>
+                <p>
+                    <input type="email" class="form__input" placeholder="email">
+                </p>
+                <p>
+                    <input type="password" class="form__input" placeholder="password">
+                </p>
+                <p>
+                    <input type="password" class="form__input" placeholder="confirm the password">
+                </p>
+                <div class="select">
+                    <select class="select-login">
+                        <option value="" class="role-name">Chose Your Role</option>
+                        <option value="Лимон">Лимон</option>
+                        <option value="Банан">Банан</option>
+                        <option value="Яблоко">Яблоко</option>
+                    </select>
+                </div>
+                <p>
+                    <button class="form__btn from__btn__signup">Sign Up</button>
+                </p>
+            </form>
+        </div>
+    </article>
+</body>
+</html>

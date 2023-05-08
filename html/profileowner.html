@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Стили-->
+        <link rel="stylesheet" href="./../css/profileowner.css">
+        <!--Фавикон-->
+        <link rel="icon" href="./../img/little-nightmares.png" type="image/x-icon"/>
+        <!--Иконки-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+        <!--НавБар-->
+        <script src="./../js/navbar.js" defer></script>
+        <script src="./../js/script.js" defer></script>
+    <title>Nightmares</title>
+</head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i><section class="home-section">
+                <div class="home-content">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </section></i>
+            <span class="logo_name">Nightmares</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-map-alt'></i>
+                    <span class="link_name">Map</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Map</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bxs-ghost'></i>
+                        <span class="link_name">Owner</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow' ></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Owner Of Quest Room</a></li>
+                    <li><a href="#">Created New Location</a></li>
+                    <li><a href="#">Location Of Owner</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-user'></i>
+                        <span class="link_name">Profile</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow' ></i>
+                </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Profile</a></li>
+                        <li><a href="#">Setting</a></li>
+                    </ul>
+            </li>
+            <li>
+                <button class="search-btn" aria-label="open search" data-search-toggler>
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="./../img/owner-logo.png" alt="profileImg">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Your Name</div>
+                        <div class="job">Owner</div>
+                    </div>
+                        <i class='bx bx-log-out' ></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="search-container" data-search-box>
+
+        <div class="input-wrapper">
+            <input type="search" name="search" aria-label="search" placeholder="Search here..." class="search-field">
+    
+            <button class="search-submit" aria-label="submit search" data-search-toggler>
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+    
+            <button class="search-close" aria-label="close search" data-search-toggler></button>
+        </div>
+    
+    </div>
+<!--Main-->
+    <main>
+<!--SideBar Profile-->
+        <div class="sidebar-profile" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./../img/owner-logo.png" alt="PhotoProfile" width="80">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name" title="Richard hanrick">NickName</h1>
+                    <p class="title">Owner</p>
+                </div>
+            </div>
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+                    <ul class="contacts-list">
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Email</p>
+                                <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+                                </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Phone</p>
+                                <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Birthday</p>
+                                <time datetime="1982-06-23">June 23, 1982</time>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Location</p>
+                                <address>Sacramento, California, USA</address>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+            <!--Main Content-->
+        <div class="main-content">
+            <article class="about  active" data-page="about">
+                <!--My Location-->
+                </section>
+                <section class="clients">
+                    <h3 class="h3 clients-title">My Locations</h3>
+                    <ul class="clients-list has-scrollbar">
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./../img/room.webp" alt="locations">
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./../img/room.webp" alt="locations">
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./../img/room.webp" alt="locations">
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./../img/room.webp" alt="locations">
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./../img/room.webp" alt="locations">
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="./../img/room.webp" alt="locations">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                    <!--Testimonials-->
+                <section class="testimonials">
+                    <h3 class="h3 testimonials-title">Testimonials</h3>
+                    <ul class="testimonials-list has-scrollbar">
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./../img/users-logo.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                        lot of experience
+                                        and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                        consectetur adipiscing
+                                        elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./../img/users-logo.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                        lot of experience
+                                        and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                        consectetur adipiscing
+                                        elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./../img/users-logo.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                        lot of experience
+                                        and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                        consectetur adipiscing
+                                        elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="./../img/users-logo.png" alt="Henry william" width="60" data-testimonials-avatar>
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                        lot of experience
+                                        and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                        consectetur adipiscing
+                                        elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                    <!--Testimonials Modal-->
+                <div class="modal-container" data-modal-container>
+                    <div class="overlay" data-overlay></div>
+                    <section class="testimonials-modal">
+                        <button class="modal-close-bttn" data-modal-close-bttn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                            </figure>
+                            <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                        </div>
+                        <div class="modal-content-testimonials">
+                            <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+                            <time datetime="2021-06-14">14 June, 2021</time>
+                            <div data-modal-text>
+                                <p>
+                                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                                    lot of experience
+                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                                    consectetur adipiscing
+                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+</body>
+</html>
